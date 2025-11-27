@@ -12,20 +12,28 @@ export default function ProjectsSection() {
         const fetchProjects = () => {
             const dummyProjects: ProjectCardProp[] = [
                 {
+                    title: "Perfumemarket Web App",
+                    description: "Full-stack marketplace app for perfume listings with product cards, search, user accounts and database-stored item data.",
+                    tags: ["React", "TypeScript", "HTML", "CSS", "Firestore"],
+                    link: "https://github.com/Secondo92/parfumemarked"
+                },
+                {
+                    title: "Safer App",
+                    description: "WPF-based kiosk application for Arla used to present safety material, videos and PDF documents for employees and contractors.",
+                    tags: ["C#", "XAML", "WPF", "MVVM"],
+                    link: "https://github.com/Secondo92/SaferRum"
+                },
+                {
                     title: "Chess game",
-                    description: "A game of chess made in C#"
+                    description: "A fun hobby project in C# WPF with MVVM architecture, turn system, legal move checks and reusable piece classes.",
+                    tags: ["C#", "XAML", "WPF", "MVVM"],
+                    link: "https://github.com/Secondo92/Skakspil"
                 },
                 {
-                    title: "title2",
-                    description: "desc2"
-                },
-                {
-                    title: "Chess game",
-                    description: "A game of chess made in C#"
-                },
-                {
-                    title: "title2",
-                    description: "desc2"
+                    title: "Backyard birds",
+                    description: "Full-stack iOS app for bird watchers to log sightings, view species lists, and manage observed birds in a personal backyard catalogue.",
+                    tags: ["Swift", "MVC", "iOS", "Firestore"],
+                    link: "https://github.com/Secondo92/BackyardBirds"
                 }
             ];
             setTimeout(() => {
