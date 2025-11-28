@@ -150,6 +150,39 @@ body {
   color: #acacac
 }
 
+.profileWrapper {
+  position: relative;
+  width: 300px; 
+  aspect-ratio: 1 / 1.2;
+  margin: 80px;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  filter: brightness(70%) sepia(20%) hue-rotate(140deg) saturate(10%);
+  transition: 0.2s ease;
+}
+
+.profileWrapper:hover .profileImage {
+  filter: none;
+}
+
+.imageFrame {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  border: 3px solid rgb(92, 255, 218);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+
 
 
 .projects-grid {
@@ -251,7 +284,7 @@ ul {
   max-width: 2000px;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0px;
 }
 
