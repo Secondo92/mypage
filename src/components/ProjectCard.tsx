@@ -8,6 +8,9 @@ export interface ProjectCardProp {
     tags?: string[];
     image?: string;
     link?: string;
+    whatILearned: string[];
+    location?: string;
+    titel?: string
 };
 
 export interface ProjectCardPropList {
@@ -22,7 +25,7 @@ function GithubIcon({ url }: { url?: string }) {
     return <Github size={20} strokeWidth={1.5} className="github" />
 }
 
-export default function ProjectCard({ title, description, tags, link }: ProjectCardProp) {
+export default function ProjectCard({ title, description, tags, link, whatILearned, titel, location }: ProjectCardProp) {
     return (
         <a href={link} target="_blank" className="project-link">
             <div className="projects-card">
@@ -78,6 +81,9 @@ export const ProjectList = ({ projects, isLoading }: ProjectCardPropList) => {
                     image={project.image}
                     tags={project.tags}
                     link={project.link}
+                    whatILearned={project.whatILearned}
+                    location={project.location}
+                    titel={project.titel}
                 />
             ))}
         </div>

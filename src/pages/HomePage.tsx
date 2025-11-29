@@ -17,12 +17,13 @@ export default function HomePage() {
             </div>
 
             <div className="block">
-                <SkillsSection />
+                <ProjectsSection />
             </div>
 
             <div className="block">
-                <ProjectsSection />
+                <SkillsSection />
             </div>
+            
 
             <div className="block">
                 <ContactSection />
