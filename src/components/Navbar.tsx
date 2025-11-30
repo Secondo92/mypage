@@ -38,8 +38,8 @@ export default function Navbar() {
         <nav className="navbar-simple">
             
             <a className={active === "about" ? "active" : ""} href="#about">{colorChanger("01. About")}</a>
-            <a className={active === "skills" ? "active" : ""} href="#skills">{colorChanger("02. Skills")}</a>
-            <a className={active === "projects" ? "active" : ""} href="#projects">{colorChanger("03. Projects")}</a>
+            <a className={active === "projects" ? "active" : ""} href="#projects">{colorChanger("02. Projects")}</a>
+            <a className={active === "skills" ? "active" : ""} href="#skills">{colorChanger("03. What I learned")}</a>
             <a className={active === "contact" ? "active" : ""} href="#contact">{colorChanger("04. Contact")}</a>
         </nav>
     );

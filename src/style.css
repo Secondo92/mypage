@@ -22,10 +22,10 @@
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  padding: 200px 40px 120px;
+  padding-top: 100px;
+  padding-bottom: 80px;
   scroll-margin-top: 80px;
 }
-
 
 .content-container {
   max-width: 600px;
@@ -48,15 +48,11 @@
   font-weight: bold;
 }
 
-
 .line {
   flex: 1;
   height: 1px;
   background: #233554;
 }
-
-
-
 
 .project-inner {
   flex: auto;
@@ -109,15 +105,11 @@ body {
   text-transform: uppercase;
 }
 
-
-
 .projects-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-
 
 .projects-footer {
   display: flex;
@@ -136,7 +128,6 @@ body {
   font-weight: 500;
   white-space: nowrap;
 }
-
 
 .projects-body {
   font-size: 80%;
@@ -177,7 +168,6 @@ body {
   opacity: 0.8;
 }
 
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -186,8 +176,6 @@ body {
   margin: 0 auto;
   padding-top: 40px;
 }
-
-
 
 .projects-card {
   background-color: #112240;
@@ -288,7 +276,7 @@ ul {
   max-width: 1100px;
   margin: 0 auto;
   gap: 40px;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
 }
 
 .content-grid {
@@ -296,24 +284,23 @@ ul {
   grid-template-columns: 300px 1fr;
 }
 
-.skills.list.box {
-  
-}
+
 .skills-list-description li::marker {
-    color: #64ffda;
-    font-size: 1.1rem;
+  color: #64ffda;
+  font-size: 1.1rem;
 }
-.location-text{
+
+.location-text {
   color: #64ffda;
 }
 
 .skills-list-title {
   font-size: 24px;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .skills-list-description {
-  color:#acacac
+  color: #acacac
 }
 
 .skills-list {
@@ -339,6 +326,125 @@ ul {
   color: #64ffda;
 }
 
+.contact-socials {
+
+  list-style: none;
+}
+
+a {
+  color: #e6f1ff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: #89ffee;
+}
+
+a.getintouch {
+  color: #64ffda
+}
+
+.getintouch {
+  display: inline-block;
+  padding: 1.2rem 2.2rem;
+  border: 2px solid rgb(92, 255, 218);
+  border-width: 1px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 400;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+.getintouch:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 6px 6px 0 #64ffda;
+  background: rgba(100, 255, 218, 0.08);
+  color: #64ffda;
+}
+
+
+.myElement {
+  position: fixed;
+  bottom: -10px;
+  left: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+.myElement svg {
+  stroke: #acacac;
+  transition: stroke 0.25s ease, transform 0.25s ease;
+}
+
+.myElement li:hover svg {
+  stroke: #64ffda;
+}
+
+.myElement li:hover {
+  transform: translateY(-7px);
+}
+
+.myElement::after {
+  content: "";
+  width: 1px;
+  height: 140px;
+  background: #ffffff;
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+.myEmail {
+  position: fixed;
+  bottom: -10px;
+  right: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+
+
+.myEmail li a {
+  writing-mode: vertical-rl;
+  transform: rotate(0);
+  color: #acacac;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+
+.myEmail li:hover a {
+  color: #64ffda;
+  transform: translateY(-10px);
+}
+
+
+.myEmail::after {
+  content: "";
+  width: 1px;
+  height: 140px;
+  background: #ffffff;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+
 .skills-list::before {
   content: "";
   position: absolute;
@@ -347,6 +453,7 @@ ul {
   bottom: 0;
   width: 2px;
   background: #233554;
+  height: calc(var(--items) * var(--itemHeight));
   z-index: 1;
 }
 
@@ -372,13 +479,12 @@ ul {
   max-width: 1100px;
   margin: 0 auto;
   gap: 20px;
-  margin-bottom: 200px;
-  color:#e6f1ff
+  color: #e6f1ff
 }
 
 .skills-grid li::marker {
-    color: #64ffda;
-    font-size: 1.1rem;
+  color: #64ffda;
+  font-size: 1.1rem;
 }
 
 
@@ -415,13 +521,10 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-@media (max-width: 600px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .profileWrapper {
-    width: 70%;
-  }
+#contact.section {
+    padding-top: 0px;
+    margin-bottom: 120px;
 }
+
+
+

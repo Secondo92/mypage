@@ -1,14 +1,11 @@
 import { colorChanger } from "../components/Navbar"
 import "../style.css";
-import { type ProjectCardProp, ProjectList } from "../components/ProjectCard";
-import { useState } from 'react';
+import { ProjectList } from "../components/ProjectCard";
 import { projects } from "../data/projects";
 
 
 
 export default function ProjectsSection() {
-    const [projectsData, setProjectsData] = useState<ProjectCardProp[]>(projects)
-    const [isLoading, setLoading] = useState(true);
 
     return (
         <section id="projects" className="section-grid">
@@ -20,7 +17,7 @@ export default function ProjectsSection() {
                     <div className="line" style={{ marginTop: "10px" }}></div>
                 </div>
                 
-                <ProjectList projects={projectsData} isLoading={isLoading} />
+                <ProjectList projects={projects} />
 
             </div>
         </section>

@@ -21,7 +21,13 @@ export default function SkillsSection() {
                 <div className="content-grid">
 
 
-                    <ul className="skills-list">
+                    <ul
+                        className="skills-list"
+                        style={{
+                            ["--items" as any]: projects.length,
+                            ["--itemHeight" as any]: itemHeight + "px"
+                        }}
+                    >
                         <div
                             className="skills-selected-bar"
                             style={{
@@ -50,10 +56,10 @@ export default function SkillsSection() {
 
                         </div>
                         <ul className="skills-list-description">
-                            {projects[selectedIndex].whatILearned.map((learn,index) => (
-                            <li>
-                                {learn}
-                            </li>
+                            {projects[selectedIndex].whatILearned.map((learn) => (
+                                <li>
+                                    {learn}
+                                </li>
                             ))}
                         </ul>
                     </div>

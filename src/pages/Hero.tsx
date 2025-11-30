@@ -12,7 +12,7 @@ export default function HomePage() {
             >
                 <div style={{ maxWidth: "800px", margin: "auto" }}>
 
-                    <p style={{ color: "#64ffda", fontSize: "18px", marginBottom: "8px", marginRight: "30px" }}>
+                    <p style={{ color: "#64ffda", fontSize: "18px", marginBottom: "8px", marginRight: "25px" }}>
                         Hi, my name is
                     </p>
                     <h1 style={{ color: "#e6f1ff", fontSize: "60px", margin: 0, fontWeight: 700 }}>
@@ -37,8 +37,8 @@ export default function HomePage() {
                             maxWidth: "540px",
                         }}
                     >
-                        I have experience in Java, C#, JavaScript,
-                        SQL and a growing interest in React and TypeScript. Open to <span style={{ color: "#64ffda" }}>job</span> and <span style={{ color: "#64ffda" }}>internship </span>
+                        I have experience working with people, strong soft-skills through collaboration and communication, and technical experience in Java, C#, 
+                        JavaScript, SQL and a growing interest in React and TypeScript. I'm open to <span style={{ color: "#64ffda" }}>job</span> and <span style={{ color: "#64ffda" }}>internship </span>
                         opportunities.
                     </p>
 

@@ -15,7 +15,6 @@ export interface ProjectCardProp {
 
 export interface ProjectCardPropList {
     projects: ProjectCardProp[]
-    isLoading: boolean
 }
 
 function GithubIcon({ url }: { url?: string }) {
@@ -25,7 +24,7 @@ function GithubIcon({ url }: { url?: string }) {
     return <Github size={20} strokeWidth={1.5} className="github" />
 }
 
-export default function ProjectCard({ title, description, tags, link, whatILearned, titel, location }: ProjectCardProp) {
+export default function ProjectCard({ title, description, tags, link }: ProjectCardProp) {
     return (
         <a href={link} target="_blank" className="project-link">
             <div className="projects-card">
@@ -61,11 +60,8 @@ export default function ProjectCard({ title, description, tags, link, whatILearn
     )
 }
 
-export const ProjectList = ({ projects, isLoading }: ProjectCardPropList) => {
+export const ProjectList = ({ projects }: ProjectCardPropList) => {
 
-    if (isLoading) {
-        // TODO: Display loading med JSX
-    }
 
     if (!projects || projects.length === 0) {
         // TODO: Display error med JSX

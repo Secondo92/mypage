@@ -23,7 +23,6 @@ export default function HomePage() {
             <div className="block">
                 <SkillsSection />
             </div>
-            
 
             <div className="block">
                 <ContactSection />
