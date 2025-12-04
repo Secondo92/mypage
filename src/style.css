@@ -189,6 +189,8 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+
 }
 
 .project-link {
@@ -215,6 +217,17 @@ body {
   color: #ffffff;
 }
 
+.github-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.github-button:focus {
+  outline: none;
+}
+
 .github:hover {
   color: #64ffda;
 }
@@ -226,6 +239,35 @@ body {
 .projects-card:hover .projects-title {
   color: #64ffda;
   transition: background-color 0.25s ease;
+}
+
+.card-wrapper {
+    position: relative;
+}
+
+.github-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+    transition: transform 0.25s ease;
+}
+
+.github-icon:hover {
+  color: #64ffda;
+}
+
+.projects-card {
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.card-wrapper:hover .projects-card {
+    transform: translateY(-6px);
+}
+
+.card-wrapper:hover .github-icon {
+    transform: translateY(-6px);
 }
 
 ul {
@@ -358,7 +400,7 @@ a.getintouch {
   font-weight: 400;
 
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
+}
 
 .getintouch:hover {
   transform: translate(-4px, -4px);
@@ -521,10 +563,24 @@ a.getintouch {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-#contact.section {
-    padding-top: 0px;
-    margin-bottom: 120px;
+
+.github-icon {
+    pointer-events: auto;
 }
 
+.card-wrapper {
+    pointer-events: none;
+}
 
+.card-wrapper > a {
+    pointer-events: auto;
+}
 
+.card-wrapper > a + .github-icon {
+    pointer-events: auto;
+}
+
+#contact.section {
+  padding-top: 0px;
+  margin-bottom: 120px;
+}

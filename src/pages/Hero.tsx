@@ -37,8 +37,10 @@ export default function HomePage() {
                             maxWidth: "540px",
                         }}
                     >
-                        I have experience working with people, strong soft-skills through collaboration and communication, and technical experience in Java, C#, 
-                        JavaScript, SQL and a growing interest in React and TypeScript. I'm open to <span style={{ color: "#64ffda" }}>job</span> and <span style={{ color: "#64ffda" }}>internship </span>
+                        I'm a curious and driven person who enjoys taking on new projects, understanding user needs, and solving problems through collaboration. 
+                        I like working with people and seeing a project through to completion. 
+                        <br></br>
+                        I'm open to <span style={{ color: "#64ffda" }}>job</span> and <span style={{ color: "#64ffda" }}>internship </span>
                         opportunities.
                     </p>
 

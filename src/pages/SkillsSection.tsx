@@ -25,14 +25,14 @@ export default function SkillsSection() {
                         className="skills-list"
                         style={{
                             ["--items" as any]: projects.length,
-                            ["--itemHeight" as any]: itemHeight + "px"
+                            ["--itemHeight" as any]: (itemHeight*1.062) + "px"
                         }}
                     >
                         <div
                             className="skills-selected-bar"
                             style={{
-                                top: selectedIndex * itemHeight + "px",
-                                height: itemHeight + "px"
+                                top: selectedIndex * (itemHeight*1.062) + "px",
+                                height: (itemHeight*1.062) + "px"
                             }}
                         />
                         {projects.map((project, index) => (
