@@ -35,7 +35,7 @@
   color: #acacac;
 }
 
-/* header row */
+
 .section-header {
   display: flex;
   align-items: center;
@@ -80,7 +80,6 @@ body {
   background-color: #0a192f;
 }
 
-/* NAVBAR */
 
 .navbar-simple {
   position: fixed;
@@ -127,13 +126,14 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
   white-space: nowrap;
+  margin-top: auto;
 }
 
 .projects-body {
   font-size: 80%;
   font-weight: 400;
   margin-bottom: 20px;
-  color: #acacac
+  color: #acacac;
 }
 
 .profileWrapper {
@@ -141,15 +141,18 @@ body {
   width: 300px;
   aspect-ratio: 1 / 1.2;
   margin: 80px;
+  z-index: 0;
 }
 
 .profileImage {
+  position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
   filter: brightness(70%) sepia(20%) hue-rotate(140deg) saturate(10%);
   transition: 0.2s ease;
+  z-index: 2;
 }
 
 .profileWrapper:hover .profileImage {
@@ -164,7 +167,7 @@ body {
   height: 100%;
   border-radius: 6px;
   border: 3px solid rgb(92, 255, 218);
-  z-index: -1;
+  z-index: 1;
   opacity: 0.8;
 }
 
@@ -179,7 +182,7 @@ body {
 
 .projects-card {
   background-color: #112240;
-  height: 230px;
+  height: 260px;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -190,7 +193,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
-
 }
 
 .project-link {
@@ -280,7 +282,6 @@ ul {
   color: #64ffda;
 }
 
-/* SECTIONS */
 
 .section {
   min-height: 70vh;
@@ -288,13 +289,51 @@ ul {
   scroll-margin-top: 80px;
 }
 
-/* CONTACT GRID */
 
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 600px) {
+  #hero div {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+
+  #hero h1, #hero h2 {
+    font-size: 32px !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .contact-grid h1 {
+    font-size: 50px !important;
+    transform: none !important;
+  }
+
+  .contact-grid span {
+    transform: none !important;
+  }
+
+  .getintouch {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .contact-grid div[style*="translateX"] {
+    transform: none !important;
+    margin: 0 auto !important;
+  }
+}
+
 
 .contact-grid {
   max-width: 1300px;
@@ -386,9 +425,7 @@ a:hover {
   color: #89ffee;
 }
 
-a.getintouch {
-  color: #64ffda
-}
+
 
 .getintouch {
   display: inline-block;
@@ -485,6 +522,14 @@ a.getintouch {
   margin-bottom: 10px;
   opacity: 0.6;
 }
+
+@media (max-width: 768px) {
+  .myElement,
+  .myEmail {
+    display: none !important;
+  }
+}
+
 
 
 .skills-list::before {

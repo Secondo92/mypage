@@ -41,7 +41,7 @@ export default function HomePage() {
                         I like working with people and seeing a project through to completion. 
                         <br></br>
                         I'm open to <span style={{ color: "#64ffda" }}>job</span> and <span style={{ color: "#64ffda" }}>internship </span>
-                        opportunities.
+                        opportunities in frontend, backend, or web development where I can listen, learn, and apply what I've learned.
                     </p>
 
                 </div>
